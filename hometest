@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<!-- html.tpl.php template -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" xmlns="https://www.w3.org/1999/xhtml" lang="en" dir="ltr"><!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://chris.work.spscc.edu/sites/all/themes/t_spscc/favicon.ico" type="image/vnd.microsoft.icon" />
+	<title>South Puget Sound Community College</title>	<style type="text/css" media="all">
+@import url("https://chris.work.spscc.edu/modules/system/system.base.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/system/system.menus.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/system/system.messages.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/system/system.theme.css?q6qezt");
+</style>
+<style type="text/css" media="all">
+@import url("https://chris.work.spscc.edu/misc/ui/jquery.ui.core.css?q6qezt");
+@import url("https://chris.work.spscc.edu/misc/ui/jquery.ui.theme.css?q6qezt");
+@import url("https://chris.work.spscc.edu/misc/ui/jquery.ui.autocomplete.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/contextual/contextual.css?q6qezt");
+</style>
+<style type="text/css" media="all">
+@import url("https://chris.work.spscc.edu/sites/all/modules/calendar/css/calendar_multiday.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/comment/comment.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/date/date_api/date.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/date/date_repeat_field/date_repeat_field.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/field/theme/field.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/google_cse/google_cse.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/node/node.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/picture/picture_wysiwyg.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/search/search.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/user/user.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/views/css/views.css?q6qezt");
+</style>
+<style type="text/css" media="all">
+@import url("https://chris.work.spscc.edu/sites/all/modules/ctools/css/ctools.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/taxonomy_access/taxonomy_access.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/devel/devel_krumo.css?q6qezt");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+ul.krumo-node{margin:0px;padding:0px;}ul.krumo-node ul{margin-left:20px;}* html ul.krumo-node ul{margin-left:24px;}div.krumo-root{border:solid 1px black;margin:1em 0em;}ul.krumo-first{font:normal 12px arial;border:solid 2px white;border-top-width:1px;background:url(https://chris.work.spscc.edu/sites/all/modules/devel/krumo/skins/default/bg.gif);}li.krumo-child{display:block;list-style:none;padding:0px;margin:0px;overflow:hidden;}div.krumo-element{cursor:default;line-height:24px;display:block;clear:both;white-space:nowrap;border-top:solid 1px white;background:#E8E8E8;padding-left:10px;}* html div.krumo-element{padding-bottom:3px;}a.krumo-name{color:#2C5858;font:bold 13px Arial;}a.krumo-name span.krumo-big{font:bold 20pt Georgia;line-height:14px;position:relative;top:2px;left:-2px;}* html a.krumo-name span.krumo-big{font:bold 19pt Georgia;top:5px;left:0px;line-height:9px;height:12px;padding:0px;margin:0px;}div.krumo-expand{background:#CCCCCC;cursor:pointer;}div.krumo-hover{background:#B7DBDB;}div.krumo-preview{font:normal 13px courier new;padding:5px 5px 14px 5px;background:white;border-top:0px;overflow:auto;white-space:pre;}* html div.krumo-preview{padding-top:2px;}li.krumo-footnote{background:white;padding:2px 5px;list-style:none;border-top:solid 1px #bebebe;margin-top:2px;cursor:default;}* html li.krumo-footnote{line-height:13px;}div.krumo-version{float:right;}li.krumo-footnote h6{font:bold 11px verdana;margin:0px;padding:0px;color:#366D6D;display:inline;}* html li.krumo-footnote h6{margin-right:3px;}li.krumo-footnote a{font:bold 10px arial;color:#434343;text-decoration:none;}li.krumo-footnote a:hover{color:black;}li.krumo-footnote span.krumo-call{font:normal 11px verdana;position:relative;top:1px;}li.krumo-footnote span.krumo-call code{font-weight:bold;}div.krumo-title{font:normal 11px verdana;position:relative;top:9px;cursor:default;line-height:2px;}strong.krumo-array-length,strong.krumo-string-length{font-weight:normal;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://chris.work.spscc.edu/sites/all/modules/coffee/css/coffee.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/node_embed/plugins/node_embed/node_embed.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/modules/wysiwyg_tools_plus/css/wysiwyg_tools_plus.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/shortcut/shortcut.css?q6qezt");
+@import url("https://chris.work.spscc.edu/modules/toolbar/toolbar.css?q6qezt");
+</style>
+<style type="text/css" media="print">
+@import url("https://chris.work.spscc.edu/modules/toolbar/toolbar-print.css?q6qezt");
+</style>
+<style type="text/css" media="all">
+@import url("https://chris.work.spscc.edu/sites/all/themes/t_spscc/css/normalize.css?q6qezt");
+@import url("https://chris.work.spscc.edu/sites/all/themes/t_spscc/css/spscc-core.css?q6qezt");
+</style>
+<style type="text/css" media="print">
+@import url("https://chris.work.spscc.edu/sites/all/themes/t_spscc/css/print.css?q6qezt");
+</style>
+	<script type="text/javascript" src="https://chris.work.spscc.edu/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/jquery-extend-3.4.0.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/drupal.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/ui/jquery.ui.core.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/ui/jquery.ui.widget.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/libraries/jquery.cycle/jquery.cycle.all.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/ui/jquery.ui.position.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/ui/jquery.ui.autocomplete.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/modules/contextual/contextual.js?v=1.0"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/google_cse/google_cse.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/spscc_main_misc/js/spscc_main_misc.analytics.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/stub_helper/js/section_nav_menu_help.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/devel/devel_krumo.js?q6qezt"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+* JavaScript routines for Krumo
+*
+* @link http://sourceforge.net/projects/krumo
+*/
+
+/////////////////////////////////////////////////////////////////////////////
+
+/**
+* Krumo JS Class
+*/
+function krumo() {
+  }
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+/**
+* Add a CSS class to an HTML element
+*
+* @param HtmlElement el
+* @param string className
+* @return void
+*/
+krumo.reclass = function(el, className) {
+  if (el.className.indexOf(className) < 0) {
+    el.className += (' ' + className);
+    }
+  }
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+/**
+* Remove a CSS class to an HTML element
+*
+* @param HtmlElement el
+* @param string className
+* @return void
+*/
+krumo.unclass = function(el, className) {
+  if (el.className.indexOf(className) > -1) {
+    el.className = el.className.replace(className, '');
+    }
+  }
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+/**
+* Toggle the nodes connected to an HTML element
+*
+* @param HtmlElement el
+* @return void
+*/
+krumo.toggle = function(el) {
+  var ul = el.parentNode.getElementsByTagName('ul');
+  for (var i=0; i<ul.length; i++) {
+    if (ul[i].parentNode.parentNode == el.parentNode) {
+      ul[i].parentNode.style.display = (window.getComputedStyle(ul[i].parentNode).display == 'none')
+        ? 'block'
+        : 'none';
+      }
+    }
+
+  // toggle class
+  //
+  if (ul[0].parentNode.style.display == 'block') {
+    krumo.reclass(el, 'krumo-opened');
+    } else {
+    krumo.unclass(el, 'krumo-opened');
+    }
+  }
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+/**
+* Hover over an HTML element
+*
+* @param HtmlElement el 
+* @return void
+*/
+krumo.over = function(el) {
+  krumo.reclass(el, 'krumo-hover');
+  }
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+/**
+* Hover out an HTML element
+*
+* @param HtmlElement el 
+* @return void
+*/
+
+krumo.out = function(el) {
+  krumo.unclass(el, 'krumo-hover');
+  }
+
+/////////////////////////////////////////////////////////////////////////////
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/spscc_t2016/scripts/spscc_t2016.fp_slideshow.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/coffee/js/coffee.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/wysiwyg_tools_plus/js/tab_builder.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/modules/toolbar/toolbar.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/themes/t_spscc/js/responsive-youtube.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/themes/t_spscc/js/jquery-3.1.1.min.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/themes/t_spscc/js/slick.min.js?q6qezt"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/themes/t_spscc/js/deconflict311.js?q6qezt"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"t_spscc","theme_token":"S47NUs4kE_E7yFwdyBCDNQd3cM5pVZuNU3gTv98yJf8","js":{"sites\/all\/modules\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/picture\/picture.min.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"misc\/ui\/jquery.ui.position.min.js":1,"misc\/ui\/jquery.ui.autocomplete.min.js":1,"modules\/contextual\/contextual.js":1,"misc\/jquery.cookie.js":1,"0":1,"sites\/all\/modules\/google_cse\/google_cse.js":1,"sites\/all\/modules\/spscc_main_misc\/js\/spscc_main_misc.analytics.js":1,"sites\/all\/modules\/stub_helper\/js\/section_nav_menu_help.js":1,"sites\/all\/modules\/devel\/devel_krumo.js":1,"1":1,"sites\/all\/modules\/spscc_t2016\/scripts\/spscc_t2016.fp_slideshow.js":1,"sites\/all\/modules\/coffee\/js\/coffee.js":1,"sites\/all\/modules\/wysiwyg_tools_plus\/js\/tab_builder.js":1,"modules\/toolbar\/toolbar.js":1,"sites\/all\/themes\/t_spscc\/js\/responsive-youtube.js":1,"sites\/all\/themes\/t_spscc\/js\/jquery-3.1.1.min.js":1,"sites\/all\/themes\/t_spscc\/js\/slick.min.js":1,"sites\/all\/themes\/t_spscc\/js\/deconflict311.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"modules\/contextual\/contextual.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/taxonomy_access\/taxonomy_access.css":1,"sites\/all\/modules\/devel\/devel_krumo.css":1,"0":1,"sites\/all\/modules\/coffee\/css\/coffee.css":1,"sites\/all\/modules\/node_embed\/plugins\/node_embed\/node_embed.css":1,"sites\/all\/modules\/wysiwyg_tools_plus\/css\/wysiwyg_tools_plus.css":1,"modules\/shortcut\/shortcut.css":1,"modules\/toolbar\/toolbar.css":1,"modules\/toolbar\/toolbar-print.css":1,"sites\/all\/themes\/t_spscc\/css\/normalize.css":1,"sites\/all\/themes\/t_spscc\/css\/spscc-core.css":1,"sites\/all\/themes\/t_spscc\/css\/print.css":1}},"googleCSE":{"cx":"014566828915798991692:ul8lsevm7_a","language":"","resultsWidth":600,"domain":"www.google.com","showWaterMark":0},"picture":{"mappings":[["Full Body Width","full_body_width"],["Half Body Width","half_body_width"],["Not Set","not_set"]],"label":"Image size (required)"},"tableHeaderOffset":"Drupal.toolbar.height"});
+//--><!]]>
+</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	 
+	  ga('create', 'UA-12015115-3', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-WZHWNK');
+	</script> 
+	<!-- End Google Tag Manager -->
+	
+</head>
+<body class="html front logged-in no-sidebars page-node page-node- page-node-5022 node-type-front-page toolbar toolbar-drawer" >
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZHWNK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<div id="toolbar" class="toolbar overlay-displace-top clearfix">
+  <div class="toolbar-menu clearfix">
+    <ul id="toolbar-home"><li class="home first last active"><a href="/" title="Home" class="active"><span class="home-link">Home</span></a></li>
+</ul>    <ul id="toolbar-user"><li class="account first"><a href="/user" title="User account">Hello <strong>Christopher Pinto</strong></a></li>
+<li class="logout last"><a href="/user/logout">Log out</a></li>
+</ul>    <h2 class="element-invisible">Administrative toolbar</h2><ul id="toolbar-menu"><li class="menu-11 path-admin-dashboard first"><a href="/admin/dashboard" id="toolbar-link-admin-dashboard" title="View and customize your dashboard."><span class="icon"></span>Dashboard <span class="element-invisible">(View and customize your dashboard.)</span></a></li>
+<li class="menu-9 path-admin-content"><a href="/admin/content" id="toolbar-link-admin-content" title="Administer content and comments."><span class="icon"></span>Content <span class="element-invisible">(Administer content and comments.)</span></a></li>
+<li class="menu-21 path-admin-structure"><a href="/admin/structure" id="toolbar-link-admin-structure" title="Administer blocks, content types, menus, etc."><span class="icon"></span>Structure <span class="element-invisible">(Administer blocks, content types, menus, etc.)</span></a></li>
+<li class="menu-7 path-admin-appearance"><a href="/admin/appearance" id="toolbar-link-admin-appearance" title="Select and configure your themes."><span class="icon"></span>Appearance <span class="element-invisible">(Select and configure your themes.)</span></a></li>
+<li class="menu-18 path-admin-people"><a href="/admin/people" id="toolbar-link-admin-people" title="Manage user accounts, roles, and permissions."><span class="icon"></span>People <span class="element-invisible">(Manage user accounts, roles, and permissions.)</span></a></li>
+<li class="menu-16 path-admin-modules"><a href="/admin/modules" id="toolbar-link-admin-modules" title="Extend site functionality."><span class="icon"></span>Modules <span class="element-invisible">(Extend site functionality.)</span></a></li>
+<li class="menu-8 path-admin-config"><a href="/admin/config" id="toolbar-link-admin-config" title="Administer settings."><span class="icon"></span>Configuration <span class="element-invisible">(Administer settings.)</span></a></li>
+<li class="menu-19 path-admin-reports"><a href="/admin/reports" id="toolbar-link-admin-reports" title="View reports, updates, and errors."><span class="icon"></span>Reports <span class="element-invisible">(View reports, updates, and errors.)</span></a></li>
+<li class="menu-12 path-admin-help last"><a href="/admin/help" id="toolbar-link-admin-help" title="Reference for usage, configuration, and modules."><span class="icon"></span>Help <span class="element-invisible">(Reference for usage, configuration, and modules.)</span></a></li>
+</ul>          <a href="/toolbar/toggle?destination=node/5022" title="Hide shortcuts" class="toggle toggle-active">Hide shortcuts</a>      </div>
+
+  <div class="toolbar-drawer clearfix">
+    <div class="toolbar-shortcuts"><ul class="menu"><li class="first leaf"><a href="/node/add">Add content</a></li>
+<li class="leaf"><a href="/admin/config/development/performance">Performance</a></li>
+<li class="leaf"><a href="/admin/people/permissions">Permissions</a></li>
+<li class="leaf"><a href="/content-summary">Content Summary</a></li>
+<li class="leaf"><a href="/admin/structure/taxonomy">Taxonomy</a></li>
+<li class="leaf"><a href="/admin/structure/block">Blocks</a></li>
+<li class="last leaf"><a href="/admin/structure/views">Views</a></li>
+</ul></div><a href="/admin/config/user-interface/shortcut/shortcut-set-1" id="edit-shortcuts">Edit shortcuts</a>  </div>
+</div>
+	<!-- page--front.tpl.php  -->
+<!-- Page Header -->
+
+<input id='burger-trigger' type='checkbox' class='hide-me' aria-hidden="true"/>
+
+<header id="header">
+	<div class="logo-floater upper">
+	    <a class="reader-only" href="#main">Skip to Content</a>
+		<a class="home-logo" href="https://spscc.edu">
+			<img src="/sites/all/themes/t_spscc/images/logos/floater_logo.png" alt="SPSCC Home" title="SPSCC Home">
+		</a>
+	</div>
+	<!-- ========================================== ultimate-links bar ============================== -->
+	<div id="region-ultimate-links">					
+	<div class='hamburger-icon'>
+		<label for='burger-trigger' class='icon-burger' aria-hidden="true"></label>
+	</div>
+			  <div class="region region-ultimate-links">
+    <div id="block-block-27" class="block block-block contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/27/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <ul id="tools-menu">
+	<li><a href="https://my.spscc.edu" title="My SPSCC Portal" target="_blank" rel="noopener noreferrer">mySPSCC</a></li>
+	<li><a href="/staff" title="Employees">Employees</a></li>
+	<li><a href="/directory" title="Employee Directory">Directory</a></li>
+	<li><a href="/search" id="search-link" title="Search"><span class="icon-search">&nbsp;</span</a></li>
+</ul>
+  </div>
+</div>
+  </div>
+				
+		
+	</div>
+	<!-- ========================================== end-ultimate-links ============================== -->
+
+	<!-- ========================================== site-brand ============================== -->
+	<div id="site-brand">
+		<div class="logo-floater lower">
+			<a class="home-logo" href="https://spscc.edu">
+				<img src="/sites/all/themes/t_spscc/images/logos/SPSCC-centered_white.svg" alt="SPSCC Home" title="SPSCC Home">
+			</a>
+		</div> 
+				<div id="region-navigation-menu">
+			  <div class="region region-navigation-menu">
+    <div id="block-spscc-t2016-spscc-t2016-nav-index" class="block block-spscc-t2016 contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/spscc_t2016/spscc_t2016_nav_index/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <ul class="navindex-list">
+<li class='navindex-entry ocean'>
+<a class="navindex-trigger" href="/start">Admissions</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-4782" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/admissions" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-ocean">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+<li><a class="button grass" href="/apply" title="Apply for Admission">APPLY FOR ADMISSION</a></li>
+<li><a class="button ocean" href="/start/steps" title="Steps to Enroll">STEPS TO ENROLL</a></li>
+</ul>
+	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+	<li><a href="/start/steps" title="Next Steps to Enroll">Applied?&nbsp;Next Steps to Enroll</a></li>
+	<li><a href="/students/calendars" title="Important Dates & Deadlines">Important Dates &amp; Deadlines</a></li>
+	<li><a href="/start/placement" title="Placement Testing">Placement Testing</a></li>
+	<li><a href="/start/transfer" title="Transferring Credits">Transferring Credits</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+    <li><a href="/start/registration" title="New Student Registration">New Student Registration</a></li>
+    <li><a href="/visit" title="Visit Campus">Visit Campus</a></li>
+    <li><a href="/start/beyond-campus" title="Beyond Campus">Beyond Campus</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry grass'>
+<a class="navindex-trigger" href="/areas">Areas of Study</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-4783" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/areas-study" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-grass">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+	<li><a class="button ocean" href="/areas" title="Areas of Interest">AREAS OF STUDY PATHWAYS</a></li>
+	<li><a class="button forest" href="/areas/subjects" title="Degrees & Certificates">DEGREES &amp; CERTIFICATES</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+	<li><a href="/areas/transfer-degrees" title="Direct Transfer">Direct Transfer Programs</a></li>
+      <li><a href="/areas/adult-education" title="Adult Education">Adult Education</a></li>
+	<li><a href="/areas/online-evening" title="Online &amp; Evening Studies">Online &amp; Evening Studies</a></li>
+	<li><a href="/cce" title="Corporate &amp; Community Education">Corporate &amp; Continuing Ed</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+      <li><a href="/areas/esl" title="English as a Second Lanaguage">English as a Second Language</a></li>
+	<li><a href="/areas/highschool" title="High School Completion">High School Completion</a></li>
+	<li><a href="/areas/international" title="International Transfer">International Transfer</a></li>
+	<li><a href="/runningstart" title="Running Start">Running Start</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry slate'>
+<a class="navindex-trigger" href="/pay-for-college">Pay for College</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-5469" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/pay-college" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-slate">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+	<li><a class="button forest" href="/tuition-fees" title="Tuition & Fees">TUITION &amp; FEES</a></li>
+	<li><a class="button sky" href="/scholarships" title="Scholarships">SCHOLARSHIPS</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+<li><a href="/financial-aid" title="Financial Aid">Financial Aid</a></li>
+<li><a href="/foundation/students" title="Foundation Funding">Foundation Funding</a></li>
+<li><a href="/workforce" title="Workforce Funding">Workforce Funding</a></li>
+<li><a href="/veterans-benefits" title="Veteran & Military Benefits">Veteran &amp; Military Benefits</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+<li><a href="https://www.fas.ctc.edu/portal6/?col=240" title="Financial Aid Portal">Financial Aid Portal</a></li>
+<li><a href="/financial-aid" title="Financial Aid Deadlines">Financial Aid Deadlines</a></li>
+<li><a href="/extra/netprice/index.html" title="Net Price Calculator">Calculate Costs</a></li>
+<li><a href="/loans" title="Loans">Loans</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry lemon'>
+<a class="navindex-trigger" href="/registration">Class Registration</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-5470" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/class-registration" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-lemon">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+<li><a class="button grass" href="/academic-calendar" title="Academic Calendar">ACADEMIC CALENDAR</a></li>
+<li><a class="button lemon" href="https://my.spscc.edu/schedule" title="Class Schedule">CLASS SCHEDULE</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+       <li><a href="/start/registration" title="New Student Registration">New Student Registration</a></li>
+	<li><a href="https://my.spscc.edu/portal" title="Current Student Registration">Current Student Registration</a></li>
+	<li><a href="/areas/adult-education" title="Adult Basic Ed Registration">Adult Basic Ed Registration</a></li>
+	<li><a href="http://www.campusce.net/SPSCC/Search/Search.aspx?q=" title="Corporate & Continuing Ed Registration">Corporate &amp; Continuing Ed</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+	<li><a href="http://spscc.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=87926&catalogId=10001&langId=-1" title="SPSCC Bookstore">Buy Textbooks</a></li>
+	<li><a href="/start/advising/entry-codes" title="Entry Codes">Entry Codes for Prerequisites</a></li>
+	<li><a href="/students/register/waitlist" title="Wait List Information">Wait List Information</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry forest'>
+<a class="navindex-trigger" href="/start/advising">Advising & Support</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-5471" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/advising-support" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-forest">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+	<li><a class="button forest" href="/students/advising" title="Meet with an Advisor">MEET WITH AN ADVISOR</a></li>
+	<li><a class="button sky" href="/students/testing" title="Testing &amp; Assessment">TESTING &amp; ASSESSMENT</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+	<li><a href="/students/academic-support" title="Academic Support">Academic Support</a></li>
+	<li><a href="/library" title="Library">Library</a></li>
+	<li><a href="/students/personal-support" title="Personal Support">Personal Support</a></li>
+	<li><a href="/it-help-center" title="Tech Support">Tech Support</a></li>
+</ul>
+	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+	<li><a href="/students/career-services" title="Career Services">Career Services</a></li>
+	<li><a href="/students/counseling" title="Counseling Services">Counseling Services</a></li>
+	<li><a href="/students/student-records" title="Current Student Services">Current Student Services</a></li>
+	<li><a href="/students/veterans-office" title="Veteran &amp; Military Services">Veteran &amp; Military Services</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry tangerine'>
+<a class="navindex-trigger" href="/campus-life">Campus Life</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-4785" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/campus-life" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-tangerine">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+<li><a class="button tangerine" href="/events-calendar" title="Events Calendar">EVENTS CALENDAR</a></li>
+<li><a class="button sky" href="/about/locations/maps" title="Campus Maps">CAMPUS MAPS</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+        <li><a href="/events/arts-entertainment" title="Arts & Entertainment">Arts &amp; Entertainment</a></li>
+	<li><a href="/student-life/" title="Clubs & Activities">Clubs &amp; Activities</a></li>
+	<li><a href="http://www.spsccathletics.com" title="Clipper Athletics">Clipper Athletics</a></li>
+       <li><a href="/campus-life/cafe" title="Cafe & Dining">Caf&eacute; &amp; Dining</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+       <li><a href="/campus-life/campus-security" title="Campus Safety">Campus Safety</a></li>
+       <li><a href="/campus-life/recreation" title="Gym Facilities">Gym Facilities</a></li>
+       <li><a href="/campus-life/parking-transportation" title="Parking & Transportation">Parking &amp; Transportation</a></li>
+       <li><a href="/student-life/diversity-center" title="Diversity Center">Diversity Center</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+</ul>
+  </div>
+</div>
+  </div>
+				
+		</div>
+			</div>
+	</header>
+
+
+<!-- Page Container -->
+<main role="main" id="main">
+	
+		<!-- ========================================== Slideshow ============================== -->
+	<div id="region-frontpage_slideshow">
+		  <div class="region region-frontpage-slideshow">
+    <div id="block-spscc-t2016-spscc-t2016-fp-slideshow" class="block block-spscc-t2016 contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/spscc_t2016/spscc_t2016_fp_slideshow/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <div id="front_page_slideshow" class="max-slide-7"><div class="slide-wrapper slide-index-1"><!--  noindex -->
+<article id="node-6735" class="node node-front-page-slide node-teaser contextual-links-region clearfix"  style="background-image: url(/sites/default/files/fpslide_backgrounds/dominic.jpg)"  about="/fp-slide/dominic" typeof="sioc:Item foaf:Document">
+	<a class="slide-destination-link" href="https://spscc.edu/news/spscc-soccer-player-dominic-ceu-bik-attacks-goals-and-field">
+	<div class="slide-text text-backdrop">
+		<div class="slide-title">The Student-Athlete</div>
+		<div class="slide-caption">Attacking his goals on and off the field</div>
+		<div class="slide-link color-scheme-green">Meet Dominic</div>
+	</div>
+	</a>
+</article>
+<!--  index -->
+</div><div class="slide-wrapper slide-index-2"><!--  noindex -->
+<article id="node-6713" class="node node-front-page-slide node-teaser contextual-links-region clearfix"  style="background-image: url(/sites/default/files/fpslide_backgrounds/tanya-molinar_0.jpg)"  about="/fp-slide/tanya-molinar" typeof="sioc:Item foaf:Document">
+	<a class="slide-destination-link" href="https://spscc.edu/news/success-ignited-meet-tanya-molinar">
+	<div class="slide-text text-backdrop">
+		<div class="slide-title">The Peer Mentor</div>
+		<div class="slide-caption">Igniting success for herself and others</div>
+		<div class="slide-link color-scheme-green">Meet Tanya</div>
+	</div>
+	</a>
+</article>
+<!--  index -->
+</div><div class="slide-wrapper slide-index-3"><!--  noindex -->
+<article id="node-6681" class="node node-front-page-slide node-teaser contextual-links-region clearfix"  style="background-image: url(/sites/default/files/fpslide_backgrounds/cleo-pineda2.jpg)"  about="/fp-slide/cleo-pineda" typeof="sioc:Item foaf:Document">
+	<a class="slide-destination-link" href="https://spscc.edu/news/meet-civil-engineer-cleo-pineda">
+	<div class="slide-text text-backdrop">
+		<div class="slide-title">Meet the Engineer</div>
+		<div class="slide-caption">From Running Start to SMU to civil engineer</div>
+		<div class="slide-link color-scheme-green">Meet Cleo</div>
+	</div>
+	</a>
+</article>
+<!--  index -->
+</div><div class="slide-wrapper slide-index-4"><!--  noindex -->
+<article id="node-6659" class="node node-front-page-slide node-teaser contextual-links-region clearfix"  style="background-image: url(/sites/default/files/fpslide_backgrounds/doty.jpg)"  about="/fp-slide/doty-catlin" typeof="sioc:Item foaf:Document">
+	<a class="slide-destination-link" href="https://spscc.edu/news/15-years-later-meet-alumna-doty-catlin-advance-cover-story">
+	<div class="slide-text text-backdrop">
+		<div class="slide-title">The Returning Mother</div>
+		<div class="slide-caption">Using business &amp; yoga to create a sound future</div>
+		<div class="slide-link color-scheme-green">Meet Doty</div>
+	</div>
+	</a>
+</article>
+<!--  index -->
+</div><div class="slide-wrapper slide-index-5"><!--  noindex -->
+<article id="node-6599" class="node node-front-page-slide node-teaser contextual-links-region clearfix"  style="background-image: url(/sites/default/files/fpslide_backgrounds/ethan2.jpg)"  about="/fp-slide/livespscc-ethan" typeof="sioc:Item foaf:Document">
+	<a class="slide-destination-link" href="https://spscc.edu/news/meet-maker-ethan-saraceno-oliveri">
+	<div class="slide-text text-backdrop">
+		<div class="slide-title">The Maker</div>
+		<div class="slide-caption">Building a career on skills from the Army</div>
+		<div class="slide-link color-scheme-green">Meet Ethan</div>
+	</div>
+	</a>
+</article>
+<!--  index -->
+</div><div class="slide-wrapper slide-index-6"><!--  noindex -->
+<article id="node-6525" class="node node-front-page-slide node-teaser contextual-links-region clearfix"  style="background-image: url(/sites/default/files/fpslide_backgrounds/carlos2.jpg)"  about="/fp-slide/livespscc-carlos" typeof="sioc:Item foaf:Document">
+	<a class="slide-destination-link" href="https://spscc.edu/news/meet-traveler-carlos-cabrera">
+	<div class="slide-text text-backdrop">
+		<div class="slide-title">The Traveler</div>
+		<div class="slide-caption">Creating art in New Zealand after SPSCC</div>
+		<div class="slide-link color-scheme-green">Meet Carlos</div>
+	</div>
+	</a>
+</article>
+<!--  index -->
+</div><div class="slide-wrapper slide-index-7"><!--  noindex -->
+<article id="node-6526" class="node node-front-page-slide node-teaser contextual-links-region clearfix"  style="background-image: url(/sites/default/files/fpslide_backgrounds/sabrina-bradford.jpg)"  about="/fp-slide/livespscc-sabrina-bradford" typeof="sioc:Item foaf:Document">
+	<a class="slide-destination-link" href="https://spscc.edu/news/meet-hr-professional-sabrina-bradford">
+	<div class="slide-text text-backdrop">
+		<div class="slide-title">The HR Professional</div>
+		<div class="slide-caption">Kicking off civilian life with updated skills</div>
+		<div class="slide-link color-scheme-green">Meet Sabrina</div>
+	</div>
+	</a>
+</article>
+<!--  index -->
+</div></div>  </div>
+</div>
+<div id="block-block-48" class="block block-block infographic-block contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/48/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <style>
+.front-page-calls {
+width:100%; 
+margin-right: 0%; 
+margin-left: 0%; 
+padding: 3em 1em 1em 0;
+margin-top: 0em;
+}
+.pathway {
+float: left; 
+width: 60%; 
+margin: 0em 0em;
+padding-top: 0em;
+}
+.pathway p {
+font-size: 1.2em;
+}
+.pathway-head {
+padding-top: 0em;
+margin-top: 0em;
+font-size: 1.8em;
+}
+.calls-action {
+float: right; 
+width: 20%; 
+margin: 0em 1em;
+padding: 1.2em 2em; 
+background-color: #0072cf;
+font-size: 1.2em;  
+/*   
+position:relative;
+padding-bottom:56.25%;
+padding-top:30px;
+height:0;
+overflow:hidden;
+*/
+}
+.calls-action a:link,a:visited {
+color:#ffffff;
+text-decoration:none;
+}
+.calls-action a:hover,a:active {
+color:#000000;
+}
+
+/* up to 1920 */
+@media screen and (max-width: 1920px) {
+}
+
+/* up to 960 */
+@media screen and (max-width: 960px) {
+.front-page-calls {
+width:90%; 
+}
+.pathway {
+float: left; 
+width: 90%; 
+margin: 0em 1em;
+}
+.pathway p {
+font-size: 1.4em;
+}
+.calls-action {
+float: left; 
+width: 75%; 
+margin: 0em 1em 1em 1em;
+padding: 1.2em 2em; 
+font-size: 1.4em;
+}
+}
+/* up to 767 */
+@media screen and (max-width: 767px) {
+}
+
+/* up to 480 */
+@media screen and (max-width: 480px) {
+.pathway p {
+font-size: 3em;
+}
+.pathway-head {
+font-size: 3.4em;
+}
+.calls-action {
+font-size: 3em; 
+margin: 0em 1em 1em 0em;   
+}
+}
+
+/* up to 460 */
+@media (max-width:460px) {
+}
+
+/* up to 300 */
+@media screen and (max-width: 300px) {
+}
+</style>
+
+<div style="width:100%; margin-right: 3%; margin-left: 3%; padding: 0em 3em;">
+
+<div class="front-page-calls">
+
+<div class="pathway">
+<h1 class="pathway-head">A Pathway to Your Career</h1>
+<p>SPSCC helps you take classes related to your interests, earn your degree faster, and graduate.</p>
+<p><a class="button sky" href="/areas" title="Areas of Study Pathways">Explore Pathways</a></p>
+</div>
+
+<div class="calls-action">
+<a href="/apply">Apply Now &raquo;</a><br>
+<a href="/areas/request-info">Request Info &raquo;</a><br>
+<a href="/pay-for-college">Get Costs &raquo;</a></div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+<style>
+div .actions a:link,a:visited {
+font-size: 1em;
+color:#ffffff;
+text-decoration:none;
+}
+div .actions a:hover,a:active {
+font-size: 1em;
+color:#000000;
+}
+</style>
+
+<div style="width:100%; margin-right: 3%; margin-left: 3%; padding: 0em 3em;">
+
+<div style="float:left; width:50%; margin: 0em 3em;">
+<h3>A Pathway to your career</h3>
+<p style="font-size:1.3em;">SPSCC helps you take classes related to your interests, earn your degree faster, and graduate.</p>
+<p><a class="button sky" href="/areas" title="Areas of Study Pathways">Explore Pathways</a></p>
+</div>
+
+<div style="float:right; width:30%; margin: 0em 1em;">
+<div style="margin-top: 2em; margin-right: 1em; padding: 1.2em 2em; background-color: #0072cf;">
+<div class="actions"><a href="/apply">Apply Now &raquo;</a><br>
+<a href="/areas/request-info">Request Info &raquo;</a><br>
+<a href="/pay-for-college">Get Costs &raquo;</a></div>
+</div>
+</div>
+
+</div>
+-->  </div>
+</div>
+  </div>
+	</div>
+		<!-- ========================================== Tagline ==============================
+	<div id="tagline">
+		<h1 class="tagline">Discover South Puget Sound</h1>
+		<div class="pin-stripe-wrapper">
+			<img class="pin-stripe left" src="/sites/all/themes/t_spscc/images/colors/1px_hexcolors/0072CF.png" alt="">
+			<a href="https://www.facebook.com/SPSCC"><img class="tagline" src="/sites/all/themes/t_spscc/images/icons/social/facebook-icon-sky-30.png" alt="Facebook icon" Title="SPSCC on Facebook"></a>
+			<a href="https://twitter.com/SPSCC"><img class="tagline" src="/sites/all/themes/t_spscc/images/icons/social/twitter-icon-sky-30.png" alt="Twitter icon" Title="SPSCC on Twitter"></a>
+			<a href="https://www.youtube.com/user/SPSCC"><img class="tagline" src="/sites/all/themes/t_spscc/images/icons/social/youtube-icon-sky-30.png" alt="YouTube icon" Title="SPSCC on YouTube"></a>			
+			<a href="https://www.instagram.com/spscc/"><img class="tagline" src="/sites/all/themes/t_spscc/images/icons/social/instagram-icon-sky-30.png" alt="Instagram icon" Title="SPSCC on Instagram"></a>			
+			<a href="https://www.linkedin.com/company/south-puget-sound-community-college-foundation/"><img class="tagline" src="/sites/all/themes/t_spscc/images/icons/social/linkedin-icon-sky-30.png" alt="LinkedIn icon" Title="SPSCC on LinkedIn"></a>
+			<a href="https://www.snapchat.com/add/spsclippers"><img class="tagline" src="/sites/all/themes/t_spscc/images/icons/social/snapchat-icon-sky-30.png" alt="Snapchat icon" Title="SPSCC on Snapchat"></a>			
+			<img class="pin-stripe right" src="/sites/all/themes/t_spscc/images/colors/1px_hexcolors/0072CF.png" alt="">
+		</div>
+	</div>
+	-->
+	
+	
+	
+	<!-- ========================================== Features ============================== -->
+	
+
+
+
+	<div class="fp-content-blocks">
+		  <div class="region region-fp-content">
+    <div id="block-block-53" class="block block-block contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/53/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+.parent {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+grid-template-rows: 1fr;
+padding: 2em 0 2em 0;
+}
+.adapt-img1 {
+width: 100%;
+height: auto;
+background-size: cover;
+}
+.adapt-text {
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 5%;
+background: #F6F3F1;
+}
+/*--><!]]>*/
+</style><div class="parent">
+	<div class="adapt-img1"><img src="https://spscc.edu/sites/default/files/imce/home/thumbs/homeherobig.jpg" /></div>
+	<div class="adapt-text">
+		<h2>Adapting High Ed During Covid-19</h2>
+		<p>Nearly 5,000 students are already taking classes virtually and online with us. Now more than ever, we can’t wait to help you achieve your career and educational goals.<br /><br /><a href="/news/coronavirus" alt="Coronavirus News">Explore FAQs and COVID-19 impacts at SPSCC &gt;</a></p>
+	</div>
+</div>
+  </div>
+</div>
+<div id="block-block-51" class="block block-block contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/51/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+.container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-template-rows: 1fr;
+column-gap: 7rem;
+row-gap: 1rem;
+padding: 2em 3em 2em 3em;
+margin-left: 3.5%;
+margin-right: 3.5%;
+}
+.virtual-content1 {
+border: 1px solid #3C6478;
+padding: 1.2em;
+}
+.virtual-p {
+padding: 0em 3em 3em 3em;
+margin-left: 3.5%;
+margin-right: 3.5%;
+}
+      @media (max-width: 450px) {
+        .p {
+          font-size: 3em;
+        }
+}
+.virtual-body {
+ padding-right: 1.2em;
+}
+.virtualc {
+border: 1px solid #3C6478 !important;
+padding: 1.2em;
+}
+/*--><!]]>*/
+</style><div class="container">
+	<div class="virtual-content1">
+		<div class="virtual-body">
+			<h2 style="color: #0051ba !important;">Virtual Assistance</h2>
+			<p>Get virtual help while campuses are closed. Connect with us by Zoom or phone at 360-596-5241.<br /><a alt="full virtual contacts" href="https://spscc.edu/contact-us/hours">Full list of virtual contacts and hours &gt;</a></p>
+			<h2>One Stop</h2>
+			<p>Begin here with questions about your enrollment, like financial aid, registration, transcripts, or Running Start.<br /><a alt="One Stop Zoom waiting room" href="https://spscc.zoom.us/j/2402402011">Zoom waiting room </a><br />
+				 Hours: 9 a.m. - 4 p.m. <br />
+				Friday: 10 a.m. – 4 p.m.</p>
+		</div>
+	</div>
+	<div class="virtualc">
+		<h2>Outreach &amp; Admissions</h2>
+		<p>Learn about getting started at SPSCC or reach out for help with your Steps to Enroll.<br /><a alt="Outreach &amp; Admissions Zoom waiting room" href="https://spscc.zoom.us/my/spsccoutreach">Zoom waiting room</a><br />
+			Hours: 10 a.m. - 4 p.m.</p>
+		<h2>Advising</h2>
+		<p>Current students can get virtual “walk-in” support from an Educational Planner on Tuesday and Wednesday.<br /><a alt="Advising Zoom waiting room" href="https://spscc.zoom.us/j/3605965267">Zoom waiting room</a><br />
+			Tuesday: 9 a.m. - 12 p.m.<br />
+			Wednesday: 1 p.m. - 4 p.m.</p>
+	</div>
+</div>
+  </div>
+</div>
+<div id="block-block-52" class="block block-block contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/52/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+.adapt-text1 h2 { 
+color: #0051ba !important;
+font-weight: 600;
+padding-bottom: .5em;
+}
+.parentadapt {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+grid-template-rows: 1fr;
+align-items: stretch;
+grid-gap: 0;
+padding: 2em 0em 0 0;
+}
+.adapt-img1 {
+    display: block;
+    object-fit: cover;
+}
+.adapt-img1 img {
+width: 100%;
+height: 100%;
+}
+@media (max-width: 450px) {
+        .adapt-img1 img {
+          max-width:100% !important;
+height: auto;
+        }
+      }
+.adapt-body {padding-left: 2.2rem;}
+.adapt-text1{background-color: #f4f4f4;
+padding-left: 3rem;
+padding-top: 1rem;
+}
+/*--><!]]>*/
+</style><div class="bkg-container">
+	<div class="parentadapt">
+		<div class="adapt-text1">
+			<div class="adapt-body">
+				<h2>I Want To <em>-</em></h2>
+				<p><a href="https://spscc.edu/areas/transfer-degrees">Transfer to a University »</a></p>
+				<p><a href="https://spscc.edu/areas/professional-technical">Start a Prof Tech Career »</a></p>
+				<p><a href="https://spscc.edu/runningstart">Enroll in Running Start »</a></p>
+				<p><a href="https://spscc.edu/areas/online-evening">Attend Online or in the Evening »</a></p>
+				<p><a href="https://spscc.edu/international/welcome">Enroll Internationally »</a></p>
+				<p><a href="https://spscc.edu/cce">Take Noncredit Classes »</a></p>
+			</div>
+		</div>
+		<div class="adapt-img1"><img src="https://spscc.edu/sites/default/files/imce/home/thumbs/Advanced%20Manufacturing-11.jpg" /></div>
+	</div>
+</div>
+  </div>
+</div>
+  </div>
+	</div>
+
+
+	<!-- ========================================== News & Events ============================== -->
+	<div id="news-events-wrapper" style="background-color:#a9abac;"> 
+	<!-- style="background-image: url(/sites/default/files/ss-window.jpg);" -->
+		<div id="news-wrapper">
+			<div class="news-item-wrapper"> 
+				<!--  template: node--news_article.tpl.php -->
+<a id="node-6707" class="embedded-news-article node node-news-article contextual-links-region"   about="/news/again-spscc-named-one-nations-top-150-community-colleges" typeof="sioc:Item foaf:Document"  href="/news/again-spscc-named-one-nations-top-150-community-colleges">
+	<img class="news-thumbnail" alt="The Aspen Institute 2021 top 150 college badge" title="" src="/sites/default/files/aspen-thumb.JPG"></img>
+	<h3 class="news-headline">For the third time in a row, SPSCC named one of nation&#039;s Top 150 community colleges</h3>
+	<p class="news-tagline">SPSCC has been recognized by the Aspen Institute College Excellence Program and will apply to compete for the 2021 Aspen Prize for Community College Excellence and $1 million dollars in prize funds.  The College Excellence Program selects its top 150 every two years from a pool of nearly 1,000 public two-year colleges nationwide. SPSCC was also recognized as a top 150 community college in Aspen Institute’s 2017 and 2019 nominations.</p>
+	<p class="news-readmore-link">Read More...</p>
+</a>	
+			 </div>
+			<div class="news-item-wrapper"> 
+				<!--  template: node--news_article.tpl.php -->
+<a id="node-6734" class="embedded-news-article node node-news-article contextual-links-region"   about="/news/spscc-taking-part-magic-season-joining-downtown-holidays-and-oly-twinklefest" typeof="sioc:Item foaf:Document"  href="/news/spscc-taking-part-magic-season-joining-downtown-holidays-and-oly-twinklefest">
+	<img class="news-thumbnail" alt="A graphic with blue text that reads Downtown for the Holidays" title="" src="/sites/default/files/ben-moore-holiday-thumb_0.JPG"></img>
+	<h3 class="news-headline">SPSCC is joining in downtown for the holidays and OlyTwinklefest</h3>
+	<p class="news-tagline">SPSCC is getting jolly this holiday season with a cookie decorating event and a festive window display. The fun begins Sun., Dec. 1, when the public is invited to join baking &amp; pastry arts professor Melanie Shelton to decorate gingerbread cookies and warm up after the Downtown for the Holidays kickoff parade. Don&#039;t miss our beautiful window display and a chance to vote for us in the 7th annual PBIA Oly Twinklefest! Voting is open from Nov. 30 - Jan. 1.</p>
+	<p class="news-readmore-link">Read More...</p>
+</a>	
+			 </div>
+			<div class="news-item-wrapper">
+				<!--  template: node--news_article.tpl.php -->
+<a id="node-6687" class="embedded-news-article node node-news-article contextual-links-region"   about="/news/new-silk-wall-exhibition-gallery-examines-israeli-west-bank-wall" typeof="sioc:Item foaf:Document"  href="/news/new-silk-wall-exhibition-gallery-examines-israeli-west-bank-wall">
+	<img class="news-thumbnail" alt="White silk with cutouts in arrangement" title="" src="/sites/default/files/Stay thumbnail.jpg"></img>
+	<h3 class="news-headline">3D art exhibit examining themes around &quot;walls&quot; comes to The Gallery</h3>
+	<p class="news-tagline">Beginning Nov. 11, SPSCC will welcome Eun-Kyung Suh, a Full Professor of 3D Art at the University of Minnesota, Duluth. Suh&#039;s new work &quot;Stay&quot; explores the historical and modern meanings of walls through her silk 3D art. The exhibition will run Nov. 11 - Dec. 13, with an opening reception and artist talk Friday, Nov. 15, from  4:30 p.m. to 6:30 p.m. </p>
+	<p class="news-readmore-link">Read More...</p>
+</a>	
+			 </div>
+		 </div>
+		 <div id="events-wrapper">	  
+			<div id="events-feature">
+				<h3>Virtual Events</h3>
+				<script type="text/javascript" src="//25livepub.collegenet.com/scripts/spuds.js"></script>
+				<div id="promo-calendar">
+					<script type="text/javascript">
+						$Trumba.addSpud({
+						webName: "featured-events-7",
+						spudType : "upcoming" ,
+						teaserBase : "http://25livepub.collegenet.com/calendars/featured-events-7" });
+					</script>
+				</div>	
+			</div>
+		</div>	
+	</div>
+	
+			<!-- System Status Messages -->
+		<div id="status-messages" class="container">
+			<div class="messages error">
+<h2 class="element-invisible">Error message</h2>
+ <ul>
+  <li>The specified file <em class="placeholder">temporary://fileirACWi</em> could not be copied, because the destination directory is not properly configured. This may be caused by a problem with file or directory permissions. More information is available in the system log.</li>
+  <li>The specified file <em class="placeholder">temporary://filemDs5zc</em> could not be copied, because the destination directory is not properly configured. This may be caused by a problem with file or directory permissions. More information is available in the system log.</li>
+ </ul>
+</div>
+		</div>
+	
+	<section id="page-content" class="container">
+		<!-- Primary Content -->
+		<div id="primary-content">
+							<div class="tabs">
+					<h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li class="active"><a href="/node/5022" class="active">View<span class="element-invisible">(active tab)</span></a></li>
+<li><a href="/node/5022/edit">Edit</a></li>
+<li><a href="/node/5022/display">Manage display</a></li>
+<li><a href="/node/5022/devel">Devel</a></li>
+</ul>				</div>
+					</div>
+	</section>
+
+
+</main>
+
+
+<!-- ========================================== Footers ============================== -->
+
+<footer>
+	<div id="region-footer-panel">
+				<div class="wrapper-logo-address">
+					<div class="footer-box-logo">
+						<a class="url" href="https://spscc.edu"><img src="/sites/all/themes/t_spscc/images/logos/logo-footer.png" title="SPSCC Home" alt="SPSCC Home"></a> 
+					</div>
+					<div class="footer-wrapper-address">
+						<div class="footer-box-address main">
+							<div class="vcard" id="SPSCC Main Campus">
+								<h2><span class="fn">Olympia Campus</span></h2>
+								<div class="adr">
+									<p><span class="street-address">2011 Mottman Rd SW</span></p>
+									<p><span class="locality">Olympia</span>, <abbr class="region" title="Washington">WA</abbr> <span class="postal-code">98512</span> <abbr class="country-name" title="United States of America">USA</abbr></p>	
+								</div>
+								<p class="tel">360-596-5200</p>
+								<p class="tel faxnum"><span class="type">Fax</span>: <span class="value">360-664-7711<span></p>	
+							</div>
+						</div>
+		
+						<div class="footer-box-address lacey">
+							<div class="vcard" id="SPSCC Lacey Campus">					
+								<h2><span class="fn">Lacey Campus</span></h2>
+								<div class="adr">
+									<p class="street-address">4220 6th Ave SE</p>
+									<p><span class="locality">Lacey</span>, <abbr class="region" title="Washington">WA</abbr> <span class="postal-code">98503</span> <abbr class="country-name" title="United States of America">USA</abbr></p>	
+								</div>
+								<p class="tel">360-709-2000</p>
+							</div>
+						</div>
+				</div> <!-- footer-wrapper-address -->
+					<div class="footer-box-social">
+						<ul class="social-links">
+							<li class="facebook-icon"><a href="https://www.facebook.com/SPSCC" title="Follow us on Facebook"><span class="reader-only">Follow us on Facebook</span></a></li>
+							<li class="twitter-icon"><a href="https://twitter.com/SPSCC" title="Follow us on Twitter"><span class="reader-only">Follow us on Twitter</span></a></li>
+							<li class="youtube-icon"><a href="http://www.youtube.com/user/SPSCC" title="Follow us on YouTube"><span class="reader-only">Follow us on YouTube</span></a></li>
+							<li class="instagram-icon"><a href="https://instagram.com/spscc/" title="Follow us on Instagram"><span class="reader-only">Follow us on Instagram</span></a></li>
+							<li class="linkedin-icon"><a href="https://www.linkedin.com/school/south-puget-sound-community-college/" title="Follow us on Linked In"><span class="reader-only">Follow us on LinkedIn</span></a></li>
+							<li class="snapchat-icon"><a href="https://www.snapchat.com/add/spsclippers" title="Follow us on Snapchat"><span class="reader-only">Follow us on Snapchat</span></a></li>
+						</ul>
+					</div>	
+				</div>  <!-- wrapper-logo-address -->		
+
+				  <div class="region region-footer-panel">
+    <div id="block-block-28" class="block block-block contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/28/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <div class="wrapper-links">
+<div class="footer-box-links">
+<ul>
+	<li><a href="/about">About SPSCC</a></li>
+	<li><a href="/accessibility">Accessibility</a></li>
+	<li><a href="/about/accreditation">Accreditation</a>&nbsp;|&nbsp;<a href="/about/plan">Strategic Plan</a></li>
+	<li><a href="http://spscc.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=87926&catalogId=10001&langId=-1">Bookstore &amp; Textbooks</a></li>
+	<li><a href="/events-calendar">Calendar</a></li>
+	<li><a href="/campus-life/campus-security">Campus Security</a>&nbsp;|&nbsp;<a href="/advising-support/campus-reporting">Reporting</a></li>
+</ul>
+</div>
+
+<div class="footer-box-links">
+<ul>
+	<li><a href="/news/catalog">Catalog</a></li>
+	<li><a href="/community">Community &amp; Business</a></li>
+	<li><a href="/contact-us">Contact Us</a></li>
+	<li><a href="/directory">Directory</a></li>
+	<li><a href="/campus-life/campus-safety/emergency">Emergency Info</a></li>
+	<li><a href="/employment">Employment</a></li>
+</ul>
+</div>
+
+<div class="footer-box-links">
+ <ul>
+	<li><a href="/foundation">Foundation</a></li>
+	<li><a href="/library">Library</a></li>
+	<li><a href="/about/locations/maps">Maps &amp; Parking</a></li>
+	<li><a href="/news">News &amp; Media</a></li>
+	<li><a href="/policy/a-z-index">Policies</a></li>
+</ul>
+</div>
+<div class="footer-box-links">
+<a href="/foundation/giving/how" title="Giving to SPSCC"><img src="/sites/default/files/imce/buttons/footer/give-to-spscc-180.jpg" alt="Student Success Building - Give to SPSCC" style="border: 1px solid #ffffff; height: 7em;"></a>
+<!--
+<a class="donate-now-button" alt="Give to SPSCC" href="/foundation/giving" title="Giving to SPSCC" style="border: 1px solid #fff; height: 7em;"></a>
+-->
+</div>
+</div>  </div>
+</div>
+  </div>
+		
+	</div>
+	<div id="region-footer-base">
+		  <div class="region region-footer-base">
+    <div id="block-spscc-t2016-spscc-t2016-footer-base" class="block block-spscc-t2016 contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/spscc_t2016/spscc_t2016_footer_base/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <div class="footer-links">
+	<span class="width40em"><a href="https://spscc.edu/about/non-discrimination-statement">Non-Discrimination Statement</a>&nbsp;|&nbsp;<a href="https://spscc.edu/disclaimer">Disclaimer</a>&nbsp;|&nbsp;<a href="https://spscc.edu/site-index">Site Index</a>&nbsp;|&nbsp;<a href="/site-feedback/general/" rel="nofollow">Feedback</a>&nbsp;|&nbsp;<a href="/cas?destination=" rel="nofollow">Staff Login</a></span>
+	<span class="width-40em"><a href="https://spscc.edu/about/non-discrimination-statement">Non-Discrimination</a>&nbsp;|&nbsp;<a href="https://spscc.edu/disclaimer">Disclaimer</a>&nbsp;|&nbsp;<a href="https://spscc.edu/site-index">Index</a>&nbsp;|&nbsp;<a href="/site-feedback/general/" rel="nofollow">Feedback</a>&nbsp;|&nbsp;<a href="/cas?destination=" rel="nofollow">Login</a></span>
+</div>
+<div class="copyright">&copy;2020 <span class="width40em">South Puget Sound Community College</span><span class="width-40em"><abbr title="South Puget Sound Community College">SPSCC</abbr></span></div>
+  </div>
+</div>
+  </div>
+		<div class="clearfix">&nbsp;</div>
+	</div>
+	
+</footer>
+
+<div id="hamburger-menu">
+	<div class="bar-menu sticky">
+		<label for='burger-trigger' class="grow icon-close" aria-hidden="true"> Close</label>
+	</div>
+	  <div class="region region-navigation-menu">
+      <div class="region region-navigation-menu">
+    <div id="block-spscc-t2016-spscc-t2016-nav-index" class="block block-spscc-t2016 contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/spscc_t2016/spscc_t2016_nav_index/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <ul class="navindex-list">
+<li class='navindex-entry ocean'>
+<a class="navindex-trigger" href="/start">Admissions</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-4782" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/admissions" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-ocean">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+<li><a class="button grass" href="/apply" title="Apply for Admission">APPLY FOR ADMISSION</a></li>
+<li><a class="button ocean" href="/start/steps" title="Steps to Enroll">STEPS TO ENROLL</a></li>
+</ul>
+	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+	<li><a href="/start/steps" title="Next Steps to Enroll">Applied?&nbsp;Next Steps to Enroll</a></li>
+	<li><a href="/students/calendars" title="Important Dates & Deadlines">Important Dates &amp; Deadlines</a></li>
+	<li><a href="/start/placement" title="Placement Testing">Placement Testing</a></li>
+	<li><a href="/start/transfer" title="Transferring Credits">Transferring Credits</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+    <li><a href="/start/registration" title="New Student Registration">New Student Registration</a></li>
+    <li><a href="/visit" title="Visit Campus">Visit Campus</a></li>
+    <li><a href="/start/beyond-campus" title="Beyond Campus">Beyond Campus</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry grass'>
+<a class="navindex-trigger" href="/areas">Areas of Study</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-4783" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/areas-study" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-grass">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+	<li><a class="button ocean" href="/areas" title="Areas of Interest">AREAS OF STUDY PATHWAYS</a></li>
+	<li><a class="button forest" href="/areas/subjects" title="Degrees & Certificates">DEGREES &amp; CERTIFICATES</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+	<li><a href="/areas/transfer-degrees" title="Direct Transfer">Direct Transfer Programs</a></li>
+      <li><a href="/areas/adult-education" title="Adult Education">Adult Education</a></li>
+	<li><a href="/areas/online-evening" title="Online &amp; Evening Studies">Online &amp; Evening Studies</a></li>
+	<li><a href="/cce" title="Corporate &amp; Community Education">Corporate &amp; Continuing Ed</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+      <li><a href="/areas/esl" title="English as a Second Lanaguage">English as a Second Language</a></li>
+	<li><a href="/areas/highschool" title="High School Completion">High School Completion</a></li>
+	<li><a href="/areas/international" title="International Transfer">International Transfer</a></li>
+	<li><a href="/runningstart" title="Running Start">Running Start</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry slate'>
+<a class="navindex-trigger" href="/pay-for-college">Pay for College</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-5469" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/pay-college" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-slate">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+	<li><a class="button forest" href="/tuition-fees" title="Tuition & Fees">TUITION &amp; FEES</a></li>
+	<li><a class="button sky" href="/scholarships" title="Scholarships">SCHOLARSHIPS</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+<li><a href="/financial-aid" title="Financial Aid">Financial Aid</a></li>
+<li><a href="/foundation/students" title="Foundation Funding">Foundation Funding</a></li>
+<li><a href="/workforce" title="Workforce Funding">Workforce Funding</a></li>
+<li><a href="/veterans-benefits" title="Veteran & Military Benefits">Veteran &amp; Military Benefits</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+<li><a href="https://www.fas.ctc.edu/portal6/?col=240" title="Financial Aid Portal">Financial Aid Portal</a></li>
+<li><a href="/financial-aid" title="Financial Aid Deadlines">Financial Aid Deadlines</a></li>
+<li><a href="/extra/netprice/index.html" title="Net Price Calculator">Calculate Costs</a></li>
+<li><a href="/loans" title="Loans">Loans</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry lemon'>
+<a class="navindex-trigger" href="/registration">Class Registration</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-5470" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/class-registration" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-lemon">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+<li><a class="button grass" href="/academic-calendar" title="Academic Calendar">ACADEMIC CALENDAR</a></li>
+<li><a class="button lemon" href="https://my.spscc.edu/schedule" title="Class Schedule">CLASS SCHEDULE</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+       <li><a href="/start/registration" title="New Student Registration">New Student Registration</a></li>
+	<li><a href="https://my.spscc.edu/portal" title="Current Student Registration">Current Student Registration</a></li>
+	<li><a href="/areas/adult-education" title="Adult Basic Ed Registration">Adult Basic Ed Registration</a></li>
+	<li><a href="http://www.campusce.net/SPSCC/Search/Search.aspx?q=" title="Corporate & Continuing Ed Registration">Corporate &amp; Continuing Ed</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+	<li><a href="http://spscc.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=87926&catalogId=10001&langId=-1" title="SPSCC Bookstore">Buy Textbooks</a></li>
+	<li><a href="/start/advising/entry-codes" title="Entry Codes">Entry Codes for Prerequisites</a></li>
+	<li><a href="/students/register/waitlist" title="Wait List Information">Wait List Information</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry forest'>
+<a class="navindex-trigger" href="/start/advising">Advising & Support</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-5471" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/advising-support" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-forest">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+	<li><a class="button forest" href="/students/advising" title="Meet with an Advisor">MEET WITH AN ADVISOR</a></li>
+	<li><a class="button sky" href="/students/testing" title="Testing &amp; Assessment">TESTING &amp; ASSESSMENT</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+	<li><a href="/students/academic-support" title="Academic Support">Academic Support</a></li>
+	<li><a href="/library" title="Library">Library</a></li>
+	<li><a href="/students/personal-support" title="Personal Support">Personal Support</a></li>
+	<li><a href="/it-help-center" title="Tech Support">Tech Support</a></li>
+</ul>
+	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+	<li><a href="/students/career-services" title="Career Services">Career Services</a></li>
+	<li><a href="/students/counseling" title="Counseling Services">Counseling Services</a></li>
+	<li><a href="/students/student-records" title="Current Student Services">Current Student Services</a></li>
+	<li><a href="/students/veterans-office" title="Veteran &amp; Military Services">Veteran &amp; Military Services</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+<li class='navindex-entry tangerine'>
+<a class="navindex-trigger" href="/campus-life">Campus Life</a>
+<div class='navindex-body hidden' aria-hidden='true'>
+<article id="node-4785" class="node node-navigation-index node-promoted node-teaser contextual-links-region clearfix" about="/navindex/campus-life" typeof="sioc:Item foaf:Document">
+		<div class="content">
+		<div class="nav-index-container highlight-tangerine">
+			<ul class="column-container">
+				<li class="column-wrapper left">
+										<ul>
+<li><a class="button tangerine" href="/events-calendar" title="Events Calendar">EVENTS CALENDAR</a></li>
+<li><a class="button sky" href="/about/locations/maps" title="Campus Maps">CAMPUS MAPS</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper center">
+										<ul class="greater-than">
+        <li><a href="/events/arts-entertainment" title="Arts & Entertainment">Arts &amp; Entertainment</a></li>
+	<li><a href="/student-life/" title="Clubs & Activities">Clubs &amp; Activities</a></li>
+	<li><a href="http://www.spsccathletics.com" title="Clipper Athletics">Clipper Athletics</a></li>
+       <li><a href="/campus-life/cafe" title="Cafe & Dining">Caf&eacute; &amp; Dining</a></li>
+</ul>	
+									</li>
+				<li class="column-wrapper right">
+											<div class="right-column-content">
+						 <ul class="greater-than">
+       <li><a href="/campus-life/campus-security" title="Campus Safety">Campus Safety</a></li>
+       <li><a href="/campus-life/recreation" title="Gym Facilities">Gym Facilities</a></li>
+       <li><a href="/campus-life/parking-transportation" title="Parking & Transportation">Parking &amp; Transportation</a></li>
+       <li><a href="/student-life/diversity-center" title="Diversity Center">Diversity Center</a></li>
+</ul>	
+						</div>
+											
+				</li>
+			</ul>
+		</div>	
+	</div>
+</article>
+</div></li>
+</ul>
+  </div>
+</div>
+  </div>
+  </div>
+				
+	<div id="region-hamburger-menu">
+	  <div class="region region-hamburger-menu">
+    <div id="block-spscc-t2016-spscc-t2016-hamburger-footer" class="block block-spscc-t2016 contextual-links-region">
+
+    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/spscc_t2016/spscc_t2016_hamburger_footer/configure?destination=node/5022">Configure block</a></li>
+</ul></div>
+  <div class="content">
+    <ul class="hamburger-footer-links">
+	<li class="portal-link"><a href="https://my.spscc.edu" title="My SPSCC Portal">mySPSCC</a></li>
+	<li class="search-link"><a href="/search" id="search-link" title="Search">Search</a></li>
+	<li class="directory-link"><a href="/directory" title="Employee Directory">Directory</a></li>
+	<li class="staff-link"><a href="/staff" title="For Employees">Employees</a></li>
+	<li class="login-link"><a href="/cas?destination=" title="Staff Login" rel="nofollow">Staff Login</a></li>
+</ul>
+  </div>
+</div>
+  </div>
+				
+   </div>
+
+	<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/picture/picturefill2/picturefill.min.js?v=2.3.1"></script>
+<script type="text/javascript" src="https://chris.work.spscc.edu/sites/all/modules/picture/picture.min.js?v=7.69"></script>
+	<!-- siteimprove beacon -->
+	<script type="text/javascript">
+	(function() {
+	var sz = document.createElement('script'); 
+	sz.type = 'text/javascript'; 
+	sz.async = true;
+	sz.src = '//siteimproveanalytics.com/js/siteanalyze_55305.js';
+	var s = document.getElementsByTagName('script')[0]; 
+
+	s.parentNode.insertBefore(sz, s);
+	})();
+	</script>
+</body>
+</html>
